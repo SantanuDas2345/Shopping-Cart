@@ -24,6 +24,9 @@ const SingleProduct = ({ prod }) => {
             <Rating rating={prod.ratings} />
           </Card.Subtitle>
           {cart.some((p) => p.id === prod.id) ? (
+
+            // some() helps us check if that particular things in the array or not
+
             <Button
               variant="danger"
               onClick={() =>

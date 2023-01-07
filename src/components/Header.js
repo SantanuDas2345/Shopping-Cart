@@ -13,6 +13,8 @@ import { Link, useLocation } from "react-router-dom";
 import { CartState } from "../context/Context";
 import "./styles.css";
 
+// the function to render the cart in the header
+
 const Header = () => {
   const {
     state: { cart },
@@ -21,7 +23,7 @@ const Header = () => {
   } = CartState();
 
   return (
-    <Navbar bg="dark" variant="dark" style={{ height: 80 }}>
+    <Navbar className="headersection sticky-top" bg="dark" variant="dark" style={{ height: 80 }}>
       <Container>
         <Navbar.Brand>
           <Link to="/">Shopping Cart</Link>

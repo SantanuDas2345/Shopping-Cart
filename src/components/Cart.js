@@ -9,6 +9,8 @@ const Cart = () => {
     state: { cart },
     dispatch,
   } = CartState();
+  
+  // how to calculate the total
   const [total, setTotal] = useState();
 
   useEffect(() => {
