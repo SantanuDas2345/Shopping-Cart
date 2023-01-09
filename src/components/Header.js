@@ -23,7 +23,7 @@ const Header = () => {
   } = CartState();
 
   return (
-    <Navbar className="headersection sticky-top" bg="dark" variant="dark" style={{ height: 80 }}>
+    <Navbar className="headersection" bg="dark" variant="dark" style={{ height: 80 }}>
       <Container>
         <Navbar.Brand>
           <Link to="/">Shopping Cart</Link>
@@ -46,7 +46,7 @@ const Header = () => {
           </Navbar.Text>
         )}
         <Nav>
-          <Dropdown alignRight>
+          <Dropdown alignRight className='cart'>
             <Dropdown.Toggle variant="success">
               <FaShoppingCart color="white" fontSize="25px" />
               <Badge>{cart.length}</Badge>

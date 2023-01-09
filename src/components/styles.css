@@ -1,5 +1,8 @@
 /* header styles */
-
+.cart {
+  position: relative;
+  left: 150px;
+}
 .header {
   display: block;
   text-align: center;
@@ -51,7 +54,8 @@
   padding-bottom: 20px;
 }
 .filters {
-  position:sticky;
+  /* position:sticky; */
+  margin-top: 30px;
   top: 80px;
 }
 

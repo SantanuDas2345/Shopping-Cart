@@ -9,7 +9,7 @@ const SingleProduct = ({ prod }) => {
   } = CartState();
 
   return (
-    <div className="products">
+    <div className="products position-relative">
       <Card>
         <Card.Img variant="top" src={prod.image} alt={prod.name} />
         <Card.Body>

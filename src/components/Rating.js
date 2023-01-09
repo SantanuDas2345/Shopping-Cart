@@ -2,6 +2,8 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 const Rating = ({ rating, onClick, style }) => {
   return (
+
+    // rating part
     <>
       {[...Array(5)].map((_, i) => (
         <span key={i} onClick={() => onClick(i)} style={style}>

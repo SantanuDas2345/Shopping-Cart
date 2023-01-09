@@ -1,7 +1,7 @@
 export const cartReducer = (state, action) => {
   switch (action.type) {
 
-    // Function of adding and removing product from the cart
+    // Functionality for adding and removing product from the cart
 
     case "ADD_TO_CART":
       return { ...state, cart: [...state.cart, { ...action.payload, qty: 1 }] };
