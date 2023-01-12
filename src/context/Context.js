@@ -22,6 +22,7 @@ const Context = ({ children }) => {
   });
 
     // for Ascending order
+    
   const [productState, productDispatch] = useReducer(productReducer, {
     byStock: false,
     byFastDelivery: false,

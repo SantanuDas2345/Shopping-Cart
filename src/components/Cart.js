@@ -27,10 +27,10 @@ const Cart = () => {
             <ListGroup.Item key={prod.id}>
               <Row>
                 <Col md={2}>
-                  <Image src={prod.image} alt={prod.name} fluid rounded />
+                  <Image src="images/tab.jpg" alt={prod.name} fluid rounded />
                 </Col>
                 <Col md={2}>
-                  <span>{prod.name}</span>
+                  <span>Ipad Mini</span>
                 </Col>
                 <Col md={2}>₹ {prod.price}</Col>
                 <Col md={2}>
@@ -74,7 +74,7 @@ const Cart = () => {
           ))}
         </ListGroup>
       </div>
-      <div className="filters summary">
+      <div className="filters summary" id='filtercheckout'>
         <span className="title">Subtotal ({cart.length}) items</span>
         <span style={{ fontWeight: 700, fontSize: 20 }}>Total: ₹ {total}</span>
         <Button type="button" disabled={cart.length === 0}>

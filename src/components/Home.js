@@ -42,11 +42,11 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Filters />
+        <Filters />
       <div className="productContainer">
         {transformProducts().map((prod) => (
           <SingleProduct prod={prod} key={prod.id} />
-        ))}
+          ))}
       </div>
     </div>
   );

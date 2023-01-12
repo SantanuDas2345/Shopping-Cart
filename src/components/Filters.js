@@ -11,13 +11,15 @@ const Filters = () => {
   // make state for rating
 
   return (
-    <div className="filters">
+    <div className="filters" id='filter'>
       <span className="title">Filter Products</span>
       <span>
         <Form.Check
           inline
+          className="pointer"
           label="Ascending"
           name="group1"
+          role='button'
           type="radio"
           id={`inline-1`}
           onChange={() =>
@@ -34,6 +36,7 @@ const Filters = () => {
           inline
           label="Descending"
           name="group1"
+          role='button'
           type="radio"
           id={`inline-2`}
           onChange={() =>
@@ -48,8 +51,10 @@ const Filters = () => {
       <span>
         <Form.Check
           inline
+          className="pointer"
           label="Include Out of Stock"
           name="group1"
+          role='button'
           type="checkbox"
           id={`inline-3`}
           onChange={() =>
@@ -65,6 +70,7 @@ const Filters = () => {
           inline
           label="Fast Delivery Only"
           name="group1"
+          role='button'
           type="checkbox"
           id={`inline-4`}
           onChange={() =>
@@ -88,8 +94,9 @@ const Filters = () => {
           style={{ cursor: "pointer" }}
         />
       </span>
+      <div className="clearfilter">
       <Button
-        variant="light"
+        variant="info"
         onClick={() =>
           productDispatch({
             type: "CLEAR_FILTERS",
@@ -98,6 +105,7 @@ const Filters = () => {
       >
         Clear Filters
       </Button>
+      </div>
     </div>
   );
 };

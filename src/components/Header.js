@@ -23,6 +23,7 @@ const Header = () => {
   } = CartState();
 
   return (
+    <div >
     <Navbar className="headersection" bg="dark" variant="dark" style={{ height: 80 }}>
       <Container>
         <Navbar.Brand>
@@ -58,12 +59,12 @@ const Header = () => {
                   {cart.map((prod) => (
                     <span className="cartitem" key={prod.id}>
                       <img
-                        src={prod.image}
+                        src="images/tab.jpg"
                         className="cartItemImg"
-                        alt={prod.name}
+                        alt="Tab"
                       />
                       <div className="cartItemDetail">
-                        <span>{prod.name}</span>
+                        <span>Ipad Mini</span>
                         <span>₹ {prod.price.split(".")[0]}</span>
                       </div>
                       <AiFillDelete
@@ -92,6 +93,7 @@ const Header = () => {
         </Nav>
       </Container>
     </Navbar>
+    </div>
   );
 };
 

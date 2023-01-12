@@ -9,11 +9,11 @@ const SingleProduct = ({ prod }) => {
   } = CartState();
 
   return (
-    <div className="products position-relative">
-      <Card>
-        <Card.Img variant="top" src={prod.image} alt={prod.name} />
-        <Card.Body>
-          <Card.Title>{prod.name}</Card.Title>
+    <div className="products">
+      <Card className="productborder">
+        <Card.Img variant="top" src='images/tab.jpg' alt='Tab' className="image"/>
+        <Card.Body className="man">
+          <Card.Title>Ipad Mini</Card.Title>
           <Card.Subtitle style={{ paddingBottom: 10 }}>
             <span>₹ {prod.price.split(".")[0]}</span>
             {prod.fastDelivery ? (
